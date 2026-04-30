@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Anniversary ❤️</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .background {
+        background: url('Sanket.png') no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.75)
+        );
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        padding: 20px;
+        width: 90%;
+        max-width: 700px;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .heart {
+        font-size: 34px;
+        margin-top: 25px;
+        animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.25); }
+        100% { transform: scale(1); }
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        background: #ff4d6d;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+        h1 { font-size: 30px; }
+        h2 { font-size: 22px; }
+        p { font-size: 15px; }
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="background">
+    <div class="overlay"></div>
+
+    <div class="content">
+        <h1>💍 Happy Anniversary 💍</h1>
+        <h2>Sanket ❤️ Prajaktha</h2>
+
+        <p>
+            Happy Marriage Anniversary to both of you! ❤️ <br><br>
+            May your life together always be filled with love, respect, and understanding.
+            In Marathi culture, marriage is not just about two people, but about two families,
+            values, and lifelong companionship—and you both truly reflect that beautifully.
+            <br><br>
+            May you continue to walk hand in hand through every phase of life,
+            supporting each other with honesty, patience, and trust.
+            <br><br>
+            Always remember—talk openly, forgive quickly, and stand by each other no matter what.
+        </p>
+
+        <div class="heart">❤️</div>
+
+        <p style="margin-top:20px;">
+            <b>तुमच्या वैवाहिक आयुष्यास खूप खूप शुभेच्छा! 🌸</b> 💕
+        </p>
+
+        <!-- Play Button -->
+        <button onclick="playMusic()">🎶 Play Music</button>
+    </div>
+</div>
+
+<!-- Audio -->
+<audio id="bgMusic" loop>
+    <source src="music.mpeg" type="audio/mpeg">
+</audio>
+
+<script>
+    const music = document.getElementById("bgMusic");
+
+    function playMusic() {
+        music.play();
+    }
+
+    // Optional: also allow tap anywhere to start music (first interaction)
+    document.body.addEventListener("click", function () {
+        music.play();
+    }, { once: true });
+</script>
+
+</body>
+</html>
