@@ -6,7 +6,7 @@
 <title>Happy Anniversary ❤️</title>
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
     * {
@@ -50,9 +50,11 @@
     }
 
     h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 40px;
+        font-family: 'Great Vibes', cursive;
+        font-size: 48px;
         margin-bottom: 15px;
+        color: #fff;
+        text-shadow: 0 0 10px rgba(255, 182, 193, 0.8);
     }
 
     h2 {
@@ -90,7 +92,7 @@
     }
 
     @media (max-width: 600px) {
-        h1 { font-size: 30px; }
+        h1 { font-size: 36px; }
         h2 { font-size: 22px; }
         p { font-size: 15px; }
     }
@@ -142,7 +144,7 @@
         music.play();
     }
 
-    // Optional: also allow tap anywhere to start music (first interaction)
+    // Play on first tap anywhere
     document.body.addEventListener("click", function () {
         music.play();
     }, { once: true });
